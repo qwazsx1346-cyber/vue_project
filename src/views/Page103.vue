@@ -10,6 +10,10 @@ const fruits = [ 'apple', 'banana', 'pear', 'pear' ];
   <template v-if="loading">로딩 중</template>
   <div v-else>로딩 완료</div>
 
+  <!-- v-if는 값이 false일 경우 아에 코드자체를 다 뺌
+  visibility 안보이게 처리하면 뷰포트에 보이진않지만 공간차지를 함
+  display none은 공간차지도x 뷰포트에도 보이지 않음 -->
+
   <div>{{ loading ? '로딩 중' : '로딩 완료' }}</div>
 
   <hr>
