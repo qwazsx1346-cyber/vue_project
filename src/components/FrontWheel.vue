@@ -6,7 +6,7 @@ const page = 'history';
 <template>
     <div class="front-wheel">
         <span :id="page">FRONT WHEEL</span>
-        <tire color="BLUE" />
+        <tire :color="BLUE" />
     </div>
 </template>
 

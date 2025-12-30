@@ -4,7 +4,7 @@
   import RearWheel from '@/components/RearWheel.vue';
   const message = 'There';
   const message2 = {
-    name: 'Kim',
+    name: 'Hong',
     age: 20
   };
 </script>
@@ -13,7 +13,9 @@
 <template>
   <div>Hello </div>
   <hr>
-  <div>Hello {{ message2.name }}</div>
+  <div>Hello {{ message2.name }}</div> 
+  <!-- 소괄호가 없으면 속성이다. 있으면 매소드. -->
+  <div>Hellow {{ message }}</div>
   <div>
       <span>Hello </span>
       <!-- v-로 시작하는 속성을 디렉티브, vue 문법 

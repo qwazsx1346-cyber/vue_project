@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/component',
+      path: '/component', //path는 경로를 뜻함
       component: () => import( '@/views/Component.vue')
     },
     {
