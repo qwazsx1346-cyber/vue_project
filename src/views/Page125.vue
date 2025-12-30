@@ -3,10 +3,10 @@ import { reactive } from 'vue';
 
 //객체안에 속성 form이 있고 form은 또 속성 id와 pw를 가지고있음
 const state = reactive ({
-  form : {
-      id: '',
-      pw: ''
-  }
+form : {
+    id: '',
+    pw: ''
+    }
 });
 
 const login = () => {
