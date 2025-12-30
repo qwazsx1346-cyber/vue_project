@@ -17,11 +17,16 @@ onMounted( () => {
 <template>
 <h3>Page126.vue</h3>
 
-<img v-for="item in state.imgList" :src="item.download_url">
-
+<img v-for="item in state.imgList" :key="item.id" 
+  :src="item.download_url"
+  class="thumb"
+  >
 
 </template>
 
 <style scoped>
-
+.thumb {
+  width: 10%;
+  height: 10%;
+}
 </style>
