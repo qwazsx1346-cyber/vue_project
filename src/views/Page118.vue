@@ -38,6 +38,8 @@ const increseMvpId = () => state.mvpId++;
     <div>
         <template v-if="state.mvpId">
           {{ state.players.find(m => m.id === state.mvpId)?.name || '없음1' }}
+          <!-- find는 원하는 요소 하나만 찾고싶을 때 사용, 원하는 값을 찾지못하면
+          undifined가 넘어옴->false로 취급. 에러가 나지않기 -->
         </template>
         <template v-else>없음2</template>
         <hr>
@@ -45,7 +47,7 @@ const increseMvpId = () => state.mvpId++;
         <div>{{ getMvpName() }}</div>
         <div>{{ getMvpName() }}</div>
         <div>{{ getMvpName() }}</div>
-        <hr>
+        <hr>0
         <!-- 컴퓨티드는 보낸 콜백함수가 딱 한번만 실행이되고 결과가 return -->
         <div>{{ computedMvpName }}</div>
         <div>{{ computedMvpName }}</div>

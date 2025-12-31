@@ -6,16 +6,17 @@ const state = reactive ({
 form : {
     id: '',
     pw: ''
-    }
+    } //문자열도 사실 객체다.
 });
 
 const login = () => {
     //예외처리
     if(state.form.id.length === 0 || !state.form.pw ) {
+        // .을 찍을 수 있는건 객체주소값을 받을 수있는 공간
         alert('아이디/비밀번호를 확인해 주세요.');
         return;
     }
-    alert(`${state.form.id}님 환영합니다!`) ;
+    alert(`${state.form.id}님 환영합니다!`) ; //void메소드이다. 혼자 덩그러니 있기때문
 }
 </script>
 
